@@ -312,6 +312,7 @@ Devise.setup do |config|
   # config.sign_in_after_change_password = true
   config.jwt do |jwt|
     jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
+    # user
     jwt.dispatch_requests = [
       ['POST', %r{users/sign_in}]
     ]
@@ -323,5 +324,17 @@ Devise.setup do |config|
     jwt.request_formats = {
       user: [:json]
     }
+    # company
+    jwt.dispatch_requests = [
+      ['POST', %r{companies/sign_in}]
+    ]
+    jwt.revocation_requests = [
+      ['DELETE', %r{companies/sign_out}]
+    ]
+    jwt.expiration_time = 15.day.to_i
+    jwt.request_formats = {
+      companies: [:json]
+    }
+    # singers ## soon
   end
 end
