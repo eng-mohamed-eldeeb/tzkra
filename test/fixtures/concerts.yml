@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  singer: one
+  venue: one
+  date: 2023-05-02
+  start_time: 2023-05-02
+  end_time: 2023-05-02
+  platinum_ticket_price: 1
+  gold_ticket_price: 1
+  siliver_ticket_price: 1
+
+two:
+  singer: two
+  venue: two
+  date: 2023-05-02
+  start_time: 2023-05-02
+  end_time: 2023-05-02
+  platinum_ticket_price: 1
+  gold_ticket_price: 1
+  siliver_ticket_price: 1

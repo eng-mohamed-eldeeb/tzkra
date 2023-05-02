@@ -1,5 +1,5 @@
 class Api::V1::VenuesController < ApplicationController
-    before_action :authenticate_company!
+    # before_action :authenticate_company!
   
     def index
       venues = current_company.venues
