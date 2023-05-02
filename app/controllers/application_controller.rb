@@ -10,7 +10,7 @@ class ApplicationController < ActionController::API
   protected
 
   def update_allowed_parameters
-    devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:img_url, :is_admin, :email, :password, :bio, :location)}
-    devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:img_url, :is_admin, :email, :password, :current_password, :bio, :location)}
+    devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:img_url, :is_admin, :email, :password, :bio, :location, :music_genre)}
+    devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:img_url, :is_admin, :email, :password, :current_password, :bio, :location, :music_genre)}
   end
 end
