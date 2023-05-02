@@ -336,5 +336,15 @@ Devise.setup do |config|
       companies: [:json]
     }
     # singers ## soon
+    jwt.dispatch_requests = [
+      ['POST', %r{singers/sign_in}]
+    ]
+    jwt.revocation_requests = [
+      ['DELETE', %r{singers/sign_out}]
+    ]
+    jwt.expiration_time = 15.day.to_i
+    jwt.request_formats = {
+      singers: [:json]
+    }
   end
 end
