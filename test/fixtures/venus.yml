@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  locatio: MyString
+  company: one
+  platinaum_seat_count: 1
+  gold_seats_count: 1
+  siliver_seats_count: 1
+
+two:
+  locatio: MyString
+  company: two
+  platinaum_seat_count: 1
+  gold_seats_count: 1
+  siliver_seats_count: 1

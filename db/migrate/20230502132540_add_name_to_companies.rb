@@ -3,5 +3,6 @@ class AddNameToCompanies < ActiveRecord::Migration[7.0]
     add_column :companies, :img_url, :string
     add_column :companies, :bio, :text
     add_column :companies, :location, :string
+    add_column :companies, :name, :string
   end
 end
